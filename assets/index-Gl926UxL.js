@@ -86,7 +86,7 @@ Error generating stack: `+o.message+`
     height: 100%;
     border-radius: 50% 50% 0 0;
     background-color: #6e07f3;
-    transform: rotate(2deg);
+
     z-index: -1;
     opacity: 0.7;
     @media (max-width: 768px) {
@@ -101,7 +101,7 @@ Error generating stack: `+o.message+`
     height: 100%;
     border-radius: 50% 50% 0 0;
     background-color: #6e07f3;
-    transform: rotate(-0.5deg);
+
     z-index: -1;
     opacity: 0.7;
     @media (max-width: 768px) {
