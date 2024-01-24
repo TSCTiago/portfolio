@@ -1,11 +1,14 @@
 {
   "name": "portfolio",
+  "homepage": "https://github.com/TSCTiago/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -13,6 +16,7 @@
     "@styled-icons/boxicons-logos": "^10.47.0",
     "@styled-icons/ionicons-solid": "^10.46.0",
     "@styled-icons/simple-icons": "^10.46.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

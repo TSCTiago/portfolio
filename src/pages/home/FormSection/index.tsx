@@ -1,5 +1,3 @@
-import React from 'react';
-
 import * as S from './style';
 // import aboutImage from '../../../assets/about_me.gif';
 

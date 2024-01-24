@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import * as S from './style';
 import aboutImage from '../../../assets/about_me.gif';
