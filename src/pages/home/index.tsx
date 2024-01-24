@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer';
 import AboutSection from './AboutSection';
 import FormSection from './FormSection';
 import HomeContainer from './HomeContainer';
@@ -9,6 +10,7 @@ export default function Home() {
       <AboutSection />
       <ProjectSection />
       <FormSection />
+      <Footer />
     </>
   );
 }
