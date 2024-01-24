@@ -20,7 +20,7 @@ export const Card = styled.div<CardProps>`
   justify-content: center;
   background: #6e07f3;
   padding: 10px;
-  gap: 15px;
+  gap: 10px;
   /* margin: 10px; */
   border-radius: 5px;
   width: 150px;
@@ -50,6 +50,9 @@ export const Card = styled.div<CardProps>`
     font-size: larger;
     letter-spacing: 5px;
   }
+  @media (max-width: 768px) {
+    width: 130px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -57,7 +60,9 @@ export const Title = styled.h3`
   font-size: 1rem;
   text-align: center;
   text-transform: uppercase;
-  margin-top: -10px;
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 export const Icon = styled.div`
   color: #fff;

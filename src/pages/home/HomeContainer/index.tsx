@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './style';
-import img from '../../../assets/home-image.png';
+import img from '../../../assets/dev.png';
 // import me from '../../assets/eu.png';
 import me from '../../../assets/eu.png';
 import { TypeAnimation } from 'react-type-animation';

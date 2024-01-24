@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import * as S from './style';
 import aboutImage from '../../../assets/about_me.gif';
@@ -8,75 +8,82 @@ import { Nextdotjs, Php, Mysql, Styledcomponents } from '@styled-icons/simple-ic
 
 import { LogoLaravel } from '@styled-icons/ionicons-solid/LogoLaravel';
 export default function AboutSection() {
+  const [size, setSize] = useState(60);
+  useEffect(() => {
+    const handleResize = () => {
+      window.innerWidth < 720 ? setSize(40) : setSize(60);
+    };
+    window.addEventListener('resize', handleResize);
+  }, []);
   const cardInfos = [
     {
       title: 'html',
-      icon: <Html5 size={60} />,
+      icon: <Html5 size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'css',
-      icon: <Css3 size={60} />,
+      icon: <Css3 size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'javascript',
-      icon: <Javascript size={60} />,
+      icon: <Javascript size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'react',
-      icon: <ReactLogo size={60} />,
+      icon: <ReactLogo size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'next js',
-      icon: <Nextdotjs size={55} />,
+      icon: <Nextdotjs size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'tailwind css',
-      icon: <TailwindCss size={60} />,
+      icon: <TailwindCss size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'bootstrap',
-      icon: <Bootstrap size={60} />,
+      icon: <Bootstrap size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'figma',
-      icon: <Figma size={60} />,
+      icon: <Figma size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'git',
-      icon: <Git size={60} />,
+      icon: <Git size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'styled components',
-      icon: <Styledcomponents size={60} />,
+      icon: <Styledcomponents size={size} />,
       tagColor: '#F14613',
     },
     {
       title: 'node js',
-      icon: <Nodejs size={60} />,
+      icon: <Nodejs size={size} />,
       tagColor: '#2199BF',
     },
     {
       title: 'php',
-      icon: <Php size={60} />,
+      icon: <Php size={size} />,
       tagColor: '#2199BF',
     },
     {
       title: 'laravel',
-      icon: <LogoLaravel size={60} />,
+      icon: <LogoLaravel size={size} />,
       tagColor: '#2199BF',
     },
     {
       title: 'mysql',
-      icon: <Mysql size={60} />,
+      icon: <Mysql size={size} />,
       tagColor: '#2199BF',
     },
   ];
@@ -96,8 +103,8 @@ export default function AboutSection() {
         <S.SubTitle>Minhas Skills</S.SubTitle>
 
         <S.CardArea>
-          {cardInfos.map((info) => (
-            <Card title={info.title} icon={info.icon} tagColor={info.tagColor} />
+          {cardInfos.map((info, i) => (
+            <Card key={i} title={info.title} icon={info.icon} tagColor={info.tagColor} />
           ))}
         </S.CardArea>
 

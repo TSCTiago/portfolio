@@ -1,4 +1,5 @@
 import AboutSection from './AboutSection';
+import FormSection from './FormSection';
 import HomeContainer from './HomeContainer';
 import ProjectSection from './ProjectSection';
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <HomeContainer />
       <AboutSection />
       <ProjectSection />
+      <FormSection />
     </>
   );
 }

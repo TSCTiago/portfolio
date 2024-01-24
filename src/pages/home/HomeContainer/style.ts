@@ -28,6 +28,7 @@ export const Me = styled.img`
   width: 170px;
   @media (max-width: 768px) {
     margin-top: 100px;
+    margin-bottom: 20px;
     width: 140px;
   }
 `;
@@ -42,8 +43,12 @@ export const Text = styled.h1`
   text-align: left;
   height: 200px;
   font-size: 2.4rem;
+  @media (min-width: 2000px) {
+    height: 150px;
+  }
   @media (max-width: 768px) {
     font-size: 1.5rem;
+    height: 150px;
   }
 `;
 
@@ -78,7 +83,6 @@ export const AreaButtons = styled.div`
   flex-direction: row;
   gap: 20px;
   margin: 0 0 4rem 0;
-
   width: 100%;
   @media (max-width: 768px) {
     align-items: center;

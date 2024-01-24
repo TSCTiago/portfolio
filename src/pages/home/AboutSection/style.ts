@@ -9,12 +9,19 @@ export const Container = styled.section`
     background: linear-gradient(to bottom, #00ae96 70%, #fff 30%);
     padding: 20px 500px;
   }
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
 `;
 export const Title = styled.h1`
   text-align: center;
   padding: 20px;
   font-size: 2rem;
   color: #ffff;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
 `;
 export const Div = styled.div`
   display: flex;
@@ -33,13 +40,18 @@ export const AboutText = styled.h3`
   font-size: 1.3rem;
   font-weight: 500;
   text-align: justify;
+  @media (max-width: 768px) {
+    text-align: justify;
+    font-size: 1.1rem;
+    margin: 10px 5px;
+  }
 `;
 export const Image = styled.img`
   width: 30%;
   margin-top: -100px;
   @media (max-width: 768px) {
-    width: 50%;
-    margin-top: 0px;
+    width: 70%;
+    margin-top: -50px;
   }
 `;
 
@@ -68,16 +80,28 @@ export const TalkToMe = styled.div`
   background: url(${background}) bottom right;
   background-size: 500px;
   background-repeat: no-repeat;
+  @media (max-width: 768px) {
+    background: none;
+  }
 `;
 export const TalkTitle = styled(Title)`
   color: #00ae96;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 export const TalkSubTitle = styled(SubTitle)`
   color: #000000;
   padding: 0 30px;
-  font-weight: 550;
+  font-weight: 500;
+  font-size: 1.3rem;
   margin-bottom: 30px;
+  @media (max-width: 768px) {
+    text-align: justify;
+    font-size: 1.1rem;
+    padding: 0 5px;
+  }
 `;
 
 export const Talkbutton = styled.a`
