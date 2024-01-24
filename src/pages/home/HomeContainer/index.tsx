@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './style';
 import img from '../../../assets/dev.png';
 // import me from '../../assets/eu.png';

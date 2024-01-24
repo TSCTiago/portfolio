@@ -1,5 +1,3 @@
-import React from 'react';
-
 import * as S from './style';
 import ProjectCard from '../../../components/ProjectCard';
 import { dataCard } from '../../../data/projectCard';

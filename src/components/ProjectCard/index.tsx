@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './style';
 import { CodeSlash, ArrowForward } from '@styled-icons/ionicons-solid';
 
