@@ -2,12 +2,14 @@ import * as S from './style';
 import img from '../../../assets/dev.png';
 // import me from '../../assets/eu.png';
 import me from '../../../assets/eu.png';
+import imageAnimated from '../../../assets/triangle.png';
 import { TypeAnimation } from 'react-type-animation';
-
+import 'animate.css';
 export default function HomeContainer() {
   return (
     <>
       <S.Container>
+        <S.ImageAnimated src={imageAnimated} alt="image" />
         <S.Left>
           <S.Me src={me} alt="my-Avatar" />
 

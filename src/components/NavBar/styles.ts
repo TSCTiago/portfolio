@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 interface NavBarProps {
-  open: boolean;
+  open?: boolean;
+  positionScroll?: number;
 }
-export const Header = styled.header`
+export const Header = styled.header<NavBarProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,7 +24,9 @@ export const NavBar = styled.nav<NavBarProps>`
   align-items: center;
   transition: 0.4s ease-in-out;
   background-color: ${(props) => (!props.open ? 'transparent' : 'white')};
+
   padding: 1rem;
+  z-index: 999;
   @media (min-width: 1700px) {
     justify-content: space-around;
   }
@@ -92,6 +95,7 @@ export const MobileNav = styled.ul<NavBarProps>`
   background: white;
   width: 100%;
   transition: 0.5s ease-in-out;
+  z-index: 999;
 
   @media (min-width: 768px) {
     display: none !important;

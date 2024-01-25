@@ -92,6 +92,6 @@ export const Link = styled.a`
     border-color: #00ae96;
     color: #00ae96;
     transform: scale(1.1);
-    background: #fff;
+    background: linear-gradient(to right, #00ae96 50%, #fff 50%);
   }
 `;
