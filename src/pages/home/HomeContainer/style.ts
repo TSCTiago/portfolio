@@ -4,23 +4,13 @@ import backLeft from '../../../assets/back1.png';
 import backRigth from '../../../assets/back.png';
 
 const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 `;
+
 const translate = keyframes`
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(15px, 15px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(15px, 15px); }
 `;
 
 export const Container = styled.section`
@@ -35,10 +25,12 @@ export const Container = styled.section`
   background-size: 500px;
   background-repeat: no-repeat;
   background-color: #f3f3fd;
+
   @media (min-width: 2000px) {
     padding: 500px;
     height: 80vh;
   }
+
   @media (max-width: 768px) {
     flex-direction: column;
     background-size: 300px;
@@ -47,19 +39,22 @@ export const Container = styled.section`
 
 export const Me = styled.img`
   width: 170px;
+
   @media (max-width: 1090px) {
-    margin-top: 100px;
     width: 150px;
   }
+
   @media (max-width: 768px) {
     margin-top: 100px;
     margin-bottom: 20px;
     width: 140px;
   }
 `;
+
 export const HomeImage = styled.img`
   width: 100%;
   animation: ${translate} 5s linear infinite;
+
   @media (min-width: 2000px) {
     width: 90%;
   }
@@ -71,6 +66,7 @@ export const Text = styled.div`
   flex-direction: column;
   text-align: left;
   font-size: 2.4rem;
+
   @media (min-width: 1400px) {
     display: block;
   }
@@ -84,6 +80,7 @@ export const Text = styled.div`
 
 export const TextDynamic = styled.span`
   color: #00ae96;
+
   @media (min-width: 1400px) {
     margin-left: 10px;
   }
@@ -95,6 +92,7 @@ export const Left = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: flex-start;
+
   @media (max-width: 768px) {
     align-items: center;
     justify-content: end;
@@ -105,6 +103,7 @@ export const Right = styled(Left)`
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+
   @media (max-width: 768px) {
     display: none;
   }
@@ -127,18 +126,20 @@ export const AreaButtons = styled.div`
 export const CvButton = styled.a`
   text-align: center;
   text-decoration: none;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: 0.4s;
   border: 3px #6e07f3 solid;
   color: #6e07f3;
-  font-weight: 500;
   padding: 5px;
   width: 35%;
   font-size: 1.3rem;
-  border-radius: 50px;
-  transition: 0.4s;
+
   &:hover {
     color: #ffff;
     background: #6e07f3;
   }
+
   @media (max-width: 1180px) {
     width: 50%;
   }
@@ -149,10 +150,11 @@ export const CvButton = styled.a`
     font-size: 1rem;
   }
 `;
+
 export const TalkButton = styled(CvButton)`
   color: #ffff;
   background: #6e07f3;
-  transition: 0.4s;
+
   &:hover {
     color: #6e07f3;
     background: #ffff;
@@ -172,18 +174,20 @@ export const ImageAnimated = styled.img`
     width: 130px;
     opacity: 0.4;
   }
+
   @media (max-width: 800px) {
     top: 100px;
     left: 250px;
     width: 120px;
     opacity: 0.4;
   }
+
   @media (max-width: 768px) {
     top: 100px;
     left: 20px;
     width: 100px;
-    opacity: 0.4;
   }
+
   @media (max-width: 500px) {
     width: 70px;
     opacity: 0.8;

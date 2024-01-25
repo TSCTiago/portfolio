@@ -113,7 +113,9 @@ export default function AboutSection() {
           <S.TalkSubTitle>
             Estou sempre aberto para discutir trabalhos de design de produtos ou oportunidades de parceria.
           </S.TalkSubTitle>
-          <S.Talkbutton>Vamos conversar</S.Talkbutton>
+          <S.Talkbutton href="https://www.linkedin.com/in/tiago-silva-carvalho-2b6244223/" target="_blank">
+            Vamos trabalhar juntos
+          </S.Talkbutton>
         </S.TalkToMe>
       </S.Container>
     </>

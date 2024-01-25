@@ -90,8 +90,8 @@ export const Link = styled.a`
 
   &:hover {
     border-color: #00ae96;
-    color: #00ae96;
+    color: #ffff;
     transform: scale(1.1);
-    background: linear-gradient(to right, #00ae96 50%, #fff 50%);
+    background: #00ae96;
   }
 `;

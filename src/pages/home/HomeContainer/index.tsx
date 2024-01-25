@@ -3,6 +3,8 @@ import img from '../../../assets/dev.png';
 // import me from '../../assets/eu.png';
 import me from '../../../assets/eu.png';
 import imageAnimated from '../../../assets/triangle.png';
+import cv from '../../../assets/cv/Currículo-Tiago.pdf';
+
 import { TypeAnimation } from 'react-type-animation';
 import 'animate.css';
 export default function HomeContainer() {
@@ -35,9 +37,12 @@ export default function HomeContainer() {
             </S.TextDynamic>
           </S.Text>
           <S.AreaButtons>
-            <S.CvButton href="#">Meu CV</S.CvButton>
-
-            <S.TalkButton href="#">Vamos Conversar</S.TalkButton>
+            <S.CvButton href={cv} target="_blank">
+              Meu CV
+            </S.CvButton>
+            <S.TalkButton href="whatsapp://send?text=Olá!&phone=+5586981918464" target="_blank">
+              Vamos Conversar
+            </S.TalkButton>
           </S.AreaButtons>
         </S.Left>
         <S.Right>
