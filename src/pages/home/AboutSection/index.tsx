@@ -8,10 +8,16 @@ import { Nextdotjs, Php, Mysql, Styledcomponents } from '@styled-icons/simple-ic
 
 import { LogoLaravel } from '@styled-icons/ionicons-solid/LogoLaravel';
 export default function AboutSection() {
-  const [size, setSize] = useState(60);
+  const [size, setSize] = useState(55);
+
+  const nowDate = new Date();
+  const dateBirth = new Date('2002-07-02');
+
+  const age = Math.floor((nowDate.getTime() - dateBirth.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
+
   useEffect(() => {
     const handleResize = () => {
-      window.innerWidth < 720 ? setSize(40) : setSize(60);
+      window.innerWidth < 720 ? setSize(40) : setSize(55);
     };
     window.addEventListener('resize', handleResize);
   }, []);
@@ -38,7 +44,7 @@ export default function AboutSection() {
     },
     {
       title: 'next js',
-      icon: <Nextdotjs size={size} />,
+      icon: <Nextdotjs size={size - 4} />,
       tagColor: '#F14613',
     },
     {
@@ -92,11 +98,12 @@ export default function AboutSection() {
       <S.Container>
         <S.Title>Olá. Meu nome é Tiago!</S.Title>
         <S.Div>
+          <S.Bar />
           <S.AboutText>
-            Desde que comecei minha jornada como designer freelancer, há mais de 11 anos, fiz trabalho remoto para agências,
-            prestei consultoria para startups e colaborei com pessoas talentosas para criar produtos digitais para uso comercial e
-            de consumo. Estou silenciosamente confiante, naturalmente curioso e trabalhando continuamente para melhorar minhas
-            habilidades, um problema de design de cada vez.
+            Tenho {age} anos. Atualmente, sou estudante de Ciência da Computação e tenho grande apreço pelo estudo, explorando as
+            incríveis possibilidades que a tecnologia oferece. Desde o início da minha jornada na programação, acumulei
+            experiência como estagiário e participei de projetos na faculdade. Atuo como desenvolvedor front-end e back-end. Estou
+            naturalmente confiante e curioso, dedicando-me constantemente ao aprimoramento das minhas habilidades.
           </S.AboutText>
           <S.Image src={aboutImage} alt="me" />
         </S.Div>
@@ -111,7 +118,7 @@ export default function AboutSection() {
         <S.TalkToMe>
           <S.TalkTitle>Interessado em colaborar comigo?</S.TalkTitle>
           <S.TalkSubTitle>
-            Estou sempre aberto para discutir trabalhos de design de produtos ou oportunidades de parceria.
+            Estou sempre aberto a discutir projetos de desenvolvimento de software ou oportunidades de colaboração.
           </S.TalkSubTitle>
           <S.Talkbutton href="https://www.linkedin.com/in/tiago-silva-carvalho-2b6244223/" target="_blank">
             Vamos trabalhar juntos

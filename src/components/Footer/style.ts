@@ -44,10 +44,6 @@ export const Container = styled.section`
     }
   }
 
-  /* @media (min-width: 2000px) {
-    background: linear-gradient(to bottom, #00ae96 70%, #fff 30%);
-    padding: 20px 500px;
-  } */
   @media (max-width: 768px) {
     padding-bottom: 50px;
   }

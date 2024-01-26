@@ -8,8 +8,9 @@ export default function ProjectSection() {
       <S.Container>
         <S.Title>Meus projetos de inicialização</S.Title>
         <S.SubTitle>
-          Sou um pouco viciado em produtos digitais. Ao longo dos anos, usei centenas de aplicativos web e móveis em diferentes
-          setores e verticais. Eventualmente, decidi que seria um desafio divertido tentar projetar e construir o meu próprio.
+          Tenho um interesse significativo por soluções digitais. Ao longo dos anos, explorei inúmeros aplicativos web em
+          diferentes setores. Recentemente, decidi que seria um desafio envolvente tentar desenvolver meus próprios projetos nesse
+          campo.
         </S.SubTitle>
         {dataCard.map((data, i) => (
           <ProjectCard key={i} title={data.title} description={data.description} img={data.img} techs={data.techs} />

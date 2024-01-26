@@ -21,7 +21,6 @@ export const Card = styled.div<CardProps>`
   background: #6e07f3;
   padding: 10px;
   gap: 10px;
-  /* margin: 10px; */
   border-radius: 5px;
   width: 150px;
   transition: 0.3s;
@@ -30,11 +29,11 @@ export const Card = styled.div<CardProps>`
   }
   &::before {
     content: '';
-    background-image: conic-gradient(${(props) => props.color} 20deg, transparent 120deg);
-    width: 150%;
-    height: 150%;
+    background-image: conic-gradient(${(props) => props.color} 120deg, transparent 120deg);
+    width: 190%;
+    height: 190%;
     position: absolute;
-    animation: ${rotate} 4s linear infinite;
+    animation: ${rotate} 5s linear infinite;
   }
 
   &::after {
@@ -57,12 +56,9 @@ export const Card = styled.div<CardProps>`
 
 export const Title = styled.h3`
   z-index: 999;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   text-transform: uppercase;
-  @media (max-width: 768px) {
-    font-size: 0.9rem;
-  }
 `;
 export const Icon = styled.div`
   color: #fff;

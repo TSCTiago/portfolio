@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import background from '../../../assets/back2.png';
 export const Container = styled.section`
   padding: 20px;
-  background: linear-gradient(to bottom, #00ae96 60%, #fff 40%);
+  background: linear-gradient(to bottom, #00ae96 50%, #fff 40%);
   color: #ffff;
 
   @media (min-width: 2000px) {
-    background: linear-gradient(to bottom, #00ae96 70%, #fff 30%);
+    background: linear-gradient(to bottom, #00ae96 50%, #fff 30%);
     padding: 20px 500px;
   }
   @media (max-width: 768px) {
@@ -24,6 +24,7 @@ export const Title = styled.h1`
   }
 `;
 export const Div = styled.div`
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -40,15 +41,34 @@ export const AboutText = styled.h3`
   font-size: 1.3rem;
   font-weight: 500;
   text-align: justify;
+  letter-spacing: normal;
   @media (max-width: 768px) {
     text-align: justify;
     font-size: 1.1rem;
-    margin: 10px 5px;
+    margin: 10px 20px;
   }
 `;
+
+export const Bar = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  border-radius: 10px;
+  height: 100%;
+  background: linear-gradient(to bottom, #f14613 50%, #6e07f3 50%);
+
+  @media (max-width: 768px) {
+    height: 70%;
+  }
+`;
+
 export const Image = styled.img`
   width: 30%;
   margin-top: -100px;
+  @media (min-width: 1700px) {
+    width: 22%;
+  }
   @media (max-width: 768px) {
     width: 70%;
     margin-top: -50px;
@@ -76,6 +96,7 @@ export const CardArea = styled.div`
 
 export const TalkToMe = styled.div`
   margin-top: 50px;
+  margin-bottom: 30px;
   text-align: center;
   background: url(${background}) bottom right;
   background-size: 500px;
@@ -114,6 +135,7 @@ export const Talkbutton = styled.a`
   font-size: 1.4rem;
   border-radius: 50px;
   transition: 0.4s;
+
   cursor: pointer;
   &:hover {
     color: #ffff;
