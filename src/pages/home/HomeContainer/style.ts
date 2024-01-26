@@ -30,18 +30,24 @@ export const Container = styled.section`
     padding: 500px;
     height: 80vh;
   }
-
+  @media (max-width: 2000px) {
+    padding: 30px 100px;
+    
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     background-size: 300px;
+    
   }
 `;
 
 export const Me = styled.img`
   width: 170px;
+  margin-top: 100px;
 
   @media (max-width: 1090px) {
-    width: 150px;
+    margin-top: 40px;
+    width: 120px;
   }
 
   @media (max-width: 768px) {
@@ -71,7 +77,7 @@ export const Text = styled.div`
     display: block;
   }
   @media (max-width: 1090px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   @media (max-width: 768px) {
     font-size: 1.5rem;

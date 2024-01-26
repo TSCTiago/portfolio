@@ -24,15 +24,20 @@ export const Title = styled.h1`
   }
 `;
 export const Div = styled.div`
+  margin: 0 200px;
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: start;
   gap: 20px;
+  @media (max-width: 1500px) {
+    margin: 0px 50px;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px 10px;
   }
 `;
 
@@ -68,6 +73,10 @@ export const Image = styled.img`
   margin-top: -100px;
   @media (min-width: 1700px) {
     width: 22%;
+  }
+  @media (max-width:1100px) {
+    width: 35%;
+    margin-top: -50px;
   }
   @media (max-width: 768px) {
     width: 70%;
