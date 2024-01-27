@@ -32,12 +32,13 @@ export const Container = styled.section`
   }
   @media (max-width: 2000px) {
     padding: 30px 100px;
-    
   }
   @media (max-width: 768px) {
     flex-direction: column;
     background-size: 300px;
-    
+  }
+  @media (max-width: 2000px) {
+    padding: 30px 20px;
   }
 `;
 
