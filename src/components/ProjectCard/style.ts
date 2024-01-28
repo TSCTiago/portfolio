@@ -14,7 +14,7 @@ export const Card = styled.div`
   @media (min-width: 2000px) {
     padding: 30px 20px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     margin: 20px 2%;
   }
@@ -45,11 +45,11 @@ export const Title = styled.h3`
   }
 `;
 export const SubTitle = styled.h3`
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: justify;
   font-weight: 500;
   @media (max-width: 768px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 `;
 
@@ -79,8 +79,12 @@ export const DivLink = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  gap: 5px;
+  gap: 20px;
   @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+    align-items: center;
     justify-content: center;
   }
 `;
@@ -100,17 +104,28 @@ export const Icon = styled.div`
   margin: 0;
 `;
 
-export const Img = styled.img`
-  width: 50%;
-  border-radius: 5px;
+export const DivImg = styled.div`
+  @media (min-width: 2000px) {
+    width: 40%;
+  }
+
   &:hover {
     transform: scale(1.01);
     filter: brightness(75%);
   }
+`;
+
+export const Img = styled.img`
+  width: 550px;
+  border-radius: 5px;
 
   @media (min-width: 2000px) {
-    width: 40%;
+    width: 500px;
   }
+  @media (max-width: 1450px) {
+    width: 450px;
+  }
+
   @media (max-width: 768px) {
     margin-top: 10px;
     width: 100%;

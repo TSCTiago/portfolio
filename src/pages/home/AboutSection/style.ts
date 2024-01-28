@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import background from '../../../assets/back2.png';
 export const Container = styled.section`
   padding: 20px;
-  background: linear-gradient(to bottom, #00ae96 50%, #fff 40%);
+  background: linear-gradient(to bottom, #00ae96 55%, #fff 45%);
   color: #ffff;
 
   @media (min-width: 2000px) {
     background: linear-gradient(to bottom, #00ae96 50%, #fff 30%);
-    padding: 20px 500px;
+    padding: 20px 300px;
   }
   @media (max-width: 768px) {
     padding-bottom: 50px;
@@ -33,7 +33,7 @@ export const Div = styled.div`
   @media (max-width: 1500px) {
     margin: 0px 50px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -71,10 +71,12 @@ export const Bar = styled.div`
 export const Image = styled.img`
   width: 30%;
   margin-top: -100px;
-  @media (min-width: 1700px) {
-    width: 22%;
+
+  @media (min-width: 2000px) {
+    width: 20%;
+    margin-top: -40px;
   }
-  @media (max-width:1100px) {
+  @media (max-width: 1200px) {
     width: 35%;
     margin-top: -50px;
   }

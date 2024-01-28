@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 interface NavBarProps {
   open?: boolean;
-  positionScroll?: number;
 }
 export const Header = styled.header<NavBarProps>`
   display: flex;

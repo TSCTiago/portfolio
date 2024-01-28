@@ -14,7 +14,6 @@ const translate = keyframes`
 `;
 
 export const Container = styled.section`
-  padding: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,18 +26,24 @@ export const Container = styled.section`
   background-color: #f3f3fd;
 
   @media (min-width: 2000px) {
-    padding: 500px;
-    height: 80vh;
+    padding: 30px 400px;
+    height: 100vh !important;
   }
   @media (max-width: 2000px) {
     padding: 30px 100px;
   }
+
+  @media (min-width: 1500px) {
+    height: 90vh;
+  }
+
+  @media (max-width: 1500px) {
+    padding: 10px 30px;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     background-size: 300px;
-  }
-  @media (max-width: 2000px) {
-    padding: 30px 20px;
+    /* height: 90vh; */
   }
 `;
 

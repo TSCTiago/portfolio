@@ -21,7 +21,7 @@ export const Container = styled.section`
   }
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ export const Img = styled.img`
     width: 100%;
   }
 `;
-export const Submitbutton = styled.a`
+export const Submitbutton = styled.button`
   width: 250px;
   text-align: center;
   text-decoration: none;

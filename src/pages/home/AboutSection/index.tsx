@@ -4,8 +4,7 @@ import * as S from './style';
 import aboutImage from '../../../assets/about_me.gif';
 import Card from '../../../components/card';
 import { Html5, Css3, Javascript, ReactLogo, TailwindCss, Figma, Nodejs, Git, Bootstrap } from '@styled-icons/boxicons-logos';
-import { Nextdotjs, Php, Mysql, Styledcomponents } from '@styled-icons/simple-icons';
-
+import { Nextdotjs, Php, Mysql, Styledcomponents, Typescript } from '@styled-icons/simple-icons';
 import { LogoLaravel } from '@styled-icons/ionicons-solid/LogoLaravel';
 export default function AboutSection() {
   const [size, setSize] = useState(55);
@@ -35,6 +34,11 @@ export default function AboutSection() {
     {
       title: 'javascript',
       icon: <Javascript size={size} />,
+      tagColor: '#F14613',
+    },
+    {
+      title: 'Typescript',
+      icon: <Typescript size={size - 12} />,
       tagColor: '#F14613',
     },
     {

@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   padding: 20px;
-  background: linear-gradient(to bottom, #00ae96 60%, #fff 40%);
+  background: linear-gradient(to bottom, #00ae96 40%, #fff 40%);
   color: #ffff;
 
   @media (min-width: 2000px) {
     background: linear-gradient(to bottom, #00ae96 70%, #fff 30%);
-    padding: 20px 500px;
+    padding: 20px 200px;
   }
 `;
 export const Title = styled.h1`
@@ -23,7 +23,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
   text-align: justify;
-  padding: 10px 20px;
+  padding: 10px 250px;
   font-weight: 500;
   font-size: 1.2rem;
   @media (max-width: 768px) {

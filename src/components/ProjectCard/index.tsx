@@ -1,16 +1,20 @@
 import * as S from './style';
-import { CodeSlash, ArrowForward } from '@styled-icons/ionicons-solid';
+import { CodeSlash, ArrowForward, Eye } from '@styled-icons/ionicons-solid';
 
 interface CardProps {
   title: string;
   description: string;
   img: string;
   techs: string[];
+  link: string;
+  demo: string;
 }
-export default function ProjectCard({ title, description, img, techs }: CardProps) {
+export default function ProjectCard({ title, description, img, techs, link, demo }: CardProps) {
   return (
     <S.Card>
-      <S.Img src={img} alt="portfolio" />
+      <S.DivImg>
+        <S.Img src={img} alt="portfolio" />
+      </S.DivImg>
 
       <S.DivInfos>
         <S.DivTitle>
@@ -29,7 +33,13 @@ export default function ProjectCard({ title, description, img, techs }: CardProp
           ))}
         </S.DivLogos>
         <S.DivLink>
-          <S.Link href="#">
+          <S.Link href={demo} target="_blank" style={{ pointerEvents: demo == '#' ? 'none' : 'all' }}>
+            Ver demo{' '}
+            <span>
+              <Eye size={30} />
+            </span>
+          </S.Link>
+          <S.Link href={link} target="_blank">
             Ver respositório{' '}
             <span>
               <ArrowForward size={30} />

@@ -1,24 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { FaXmark, FaAlignJustify } from 'react-icons/fa6';
 
 import * as S from './styles';
 import Logo from '../../assets/logo.png';
 
 export default function NavBar() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const handleScroll = () => {
-    const position = window.scrollY;
-    setScrollPosition(position);
-    // console.log(position);S
-  };
+  // const [scrollPosition, setScrollPosition] = useState(0);
+  // const handleScroll = () => {
+  //   const position = window.scrollY;
+  //   setScrollPosition(position);
+  //   // console.log(position);S
+  // };
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll, { passive: true });
+  // }, []);
 
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
   useEffect(() => {
@@ -31,7 +27,7 @@ export default function NavBar() {
   }, []);
   return (
     <S.NavBar open={isMobileNavOpen}>
-      <S.Header positionScroll={scrollPosition}>
+      <S.Header>
         <S.Logo src={Logo} />
         <S.MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
           {isMobileNavOpen ? <FaXmark /> : <FaAlignJustify />}

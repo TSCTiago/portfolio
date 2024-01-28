@@ -13,7 +13,15 @@ export default function ProjectSection() {
           campo.
         </S.SubTitle>
         {dataCard.map((data, i) => (
-          <ProjectCard key={i} title={data.title} description={data.description} img={data.img} techs={data.techs} />
+          <ProjectCard
+            key={i}
+            title={data.title}
+            description={data.description}
+            img={data.img}
+            techs={data.techs}
+            link={data.link}
+            demo={data.demo}
+          />
         ))}
       </S.Container>
     </>

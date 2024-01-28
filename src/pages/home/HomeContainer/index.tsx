@@ -7,6 +7,7 @@ import cv from '../../../assets/cv/Currículo-Tiago.pdf';
 
 import { TypeAnimation } from 'react-type-animation';
 import 'animate.css';
+
 export default function HomeContainer() {
   return (
     <>
@@ -19,17 +20,7 @@ export default function HomeContainer() {
             bem-vindo ao meu site portfolio! Sou Programador
             <S.TextDynamic>
               <TypeAnimation
-                sequence={[
-                  'front-end',
-                  1000,
-                  'back-end',
-                  2000,
-                  'Freelancer',
-                  1000,
-                  () => {
-                    console.log('Sequence completed');
-                  },
-                ]}
+                sequence={['front-end', 1000, 'back-end', 2000, 'Freelancer', 1000]}
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
