@@ -1,21 +1,10 @@
 import React, { useEffect } from 'react';
 import { FaXmark, FaAlignJustify } from 'react-icons/fa6';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import * as S from './styles';
 import Logo from '../../assets/logo.png';
 
 export default function NavBar() {
-  // const [scrollPosition, setScrollPosition] = useState(0);
-  // const handleScroll = () => {
-  //   const position = window.scrollY;
-  //   setScrollPosition(position);
-  //   // console.log(position);S
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll, { passive: true });
-  // }, []);
-
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
   useEffect(() => {
     const handleResize = () => {
@@ -36,30 +25,36 @@ export default function NavBar() {
 
       <S.DesktopNav>
         <S.NavItem>
-          <a href="/">Home</a>
+          <AnchorLink href="#home">Home</AnchorLink>
         </S.NavItem>
         <S.NavItem>
-          <a href="/">Sobre</a>
+          <AnchorLink href="#about">Sobre</AnchorLink>
         </S.NavItem>
         <S.NavItem>
-          <a href="/">Projetos</a>
+          <AnchorLink href="#experience">Experiências</AnchorLink>
         </S.NavItem>
         <S.NavItem>
-          <a href="/">Contato</a>
+          <AnchorLink href="#projects">Projetos</AnchorLink>
+        </S.NavItem>
+        <S.NavItem>
+          <AnchorLink href="#contact">Contato</AnchorLink>
         </S.NavItem>
       </S.DesktopNav>
       <S.MobileNav open={isMobileNavOpen}>
         <S.NavItem>
-          <a href="/">Home</a>
+          <AnchorLink href="#home">Home</AnchorLink>
         </S.NavItem>
         <S.NavItem>
-          <a href="/">Sobre</a>
+          <AnchorLink href="#about">Sobre</AnchorLink>
         </S.NavItem>
         <S.NavItem>
-          <a href="/">Projetos</a>
+          <AnchorLink href="#experience">Experiências</AnchorLink>
         </S.NavItem>
         <S.NavItem>
-          <a href="/">Contato</a>
+          <AnchorLink href="#projects">Projetos</AnchorLink>
+        </S.NavItem>
+        <S.NavItem>
+          <AnchorLink href="#contact">Contato</AnchorLink>
         </S.NavItem>
       </S.MobileNav>
     </S.NavBar>

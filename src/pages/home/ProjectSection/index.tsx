@@ -5,7 +5,7 @@ import { dataCard } from '../../../data/projectCard';
 export default function ProjectSection() {
   return (
     <>
-      <S.Container>
+      <S.Container id="projects">
         <S.Title>Meus projetos de inicialização</S.Title>
         <S.SubTitle>
           Tenho um interesse significativo por soluções digitais. Ao longo dos anos, explorei inúmeros aplicativos web em

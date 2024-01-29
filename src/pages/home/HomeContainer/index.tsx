@@ -11,7 +11,7 @@ import 'animate.css';
 export default function HomeContainer() {
   return (
     <>
-      <S.Container>
+      <S.Container id="home">
         <S.ImageAnimated src={imageAnimated} alt="image" />
         <S.Left>
           <S.Me src={me} alt="my-Avatar" />

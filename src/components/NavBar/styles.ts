@@ -3,26 +3,18 @@ import styled from 'styled-components';
 interface NavBarProps {
   open?: boolean;
 }
-export const Header = styled.header<NavBarProps>`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  @media (max-width: 768px) {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-`;
 
 export const NavBar = styled.nav<NavBarProps>`
-  position: fixed;
+  /* position: fixed; */
+  z-index: 999;
+
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   transition: 0.4s ease-in-out;
-  background-color: ${(props) => (!props.open ? 'transparent' : 'white')};
+  background: ${(props) => (!props.open ? 'transparent' : '#FFF')};
 
   padding: 1rem;
   z-index: 999;
@@ -30,11 +22,28 @@ export const NavBar = styled.nav<NavBarProps>`
     justify-content: space-around;
   }
   @media (max-width: 768px) {
+    position: fixed;
     flex-direction: column;
+    background: ${(props) => (!props.open ? 'transparent' : '#FFF')};
   }
 `;
 
+export const Header = styled.div<NavBarProps>`
+  z-index: 999;
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: 'black';
+  }
+`;
 export const NavItem = styled.li`
+  z-index: 999;
+
   list-style: none;
   margin: 0 1rem;
   font-size: 1.5rem;

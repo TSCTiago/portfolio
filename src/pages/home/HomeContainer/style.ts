@@ -18,6 +18,7 @@ export const Container = styled.section`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: -80px;
   background:
     url(${backLeft}) bottom left,
     url(${backRigth}) top right;
@@ -43,6 +44,8 @@ export const Container = styled.section`
   @media (max-width: 768px) {
     flex-direction: column;
     background-size: 300px;
+    margin-top: 0px;
+
     /* height: 90vh; */
   }
 `;

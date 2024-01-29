@@ -43,7 +43,7 @@ export default function FormSection() {
   }
   return (
     <>
-      <S.Container>
+      <S.Container id="contact">
         <S.Form onSubmit={sendEmail}>
           <S.Title>Entre em contato</S.Title>
           <Input type="text" placeholder="Nome" value={nome} Isinput={true} onInputChange={setNome} />

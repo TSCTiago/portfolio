@@ -9,7 +9,7 @@ import { LocationPin, TextDocument } from '@styled-icons/entypo/';
 export default function ExperienceSection() {
   return (
     <>
-      <S.Container>
+      <S.Container id="experience">
         <S.Title>Minhas experiências profissionais</S.Title>
         <VerticalTimeline lineColor="#F14613" layout="2-columns">
           <VerticalTimelineElement

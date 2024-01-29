@@ -115,7 +115,7 @@ export default function AboutSection() {
   ];
   return (
     <>
-      <S.Container>
+      <S.Container id="about">
         <S.Title>Olá. Meu nome é Tiago!</S.Title>
         <S.Div>
           <S.Bar />
