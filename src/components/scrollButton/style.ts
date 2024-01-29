@@ -9,7 +9,6 @@ export const ScrollTopButton = styled.div`
   justify-content: center;
   background: #6e07f3;
   color: #fff;
-  /* margin: ; */
   border-radius: 10px;
   width: 50px;
   height: 50px;

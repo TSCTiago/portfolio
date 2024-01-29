@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import * as S from './style';
 import { FaAngleUp } from 'react-icons/fa6';
 
@@ -7,7 +7,6 @@ export default function ScrollButton() {
   const handleScroll = () => {
     const position = window.scrollY;
     setScrollPosition(position);
-    // console.log(position);S
   };
   const scrollToTop = () => {
     window.scrollTo({
