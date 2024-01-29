@@ -1,5 +1,3 @@
-// import { Store } from 'react-notifications-component';
-
 import { iNotification } from 'react-notifications-component';
 
 export const alertSuccess: iNotification = {

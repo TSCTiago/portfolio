@@ -3,7 +3,18 @@ import { useEffect, useState } from 'react';
 import * as S from './style';
 import aboutImage from '../../../assets/about_me.gif';
 import Card from '../../../components/card';
-import { Html5, Css3, Javascript, ReactLogo, TailwindCss, Figma, Nodejs, Git, Bootstrap } from '@styled-icons/boxicons-logos';
+import {
+  Html5,
+  Css3,
+  Javascript,
+  ReactLogo,
+  TailwindCss,
+  Figma,
+  Nodejs,
+  Git,
+  Bootstrap,
+  Python,
+} from '@styled-icons/boxicons-logos';
 import { Nextdotjs, Php, Mysql, Styledcomponents, Typescript } from '@styled-icons/simple-icons';
 import { LogoLaravel } from '@styled-icons/ionicons-solid/LogoLaravel';
 export default function AboutSection() {
@@ -94,6 +105,11 @@ export default function AboutSection() {
     {
       title: 'mysql',
       icon: <Mysql size={size} />,
+      tagColor: '#2199BF',
+    },
+    {
+      title: 'Python',
+      icon: <Python size={size} />,
       tagColor: '#2199BF',
     },
   ];
