@@ -10,7 +10,7 @@ export default function ExperienceSection() {
   return (
     <>
       <S.Container>
-        <S.Title>Minhas experiências profissionais!</S.Title>
+        <S.Title>Minhas experiências profissionais</S.Title>
         <VerticalTimeline lineColor="#F14613" layout="2-columns">
           <VerticalTimelineElement
             contentStyle={S.contentStyle}
