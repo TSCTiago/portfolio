@@ -20,7 +20,7 @@ export default function HomeContainer() {
             bem-vindo ao meu site portfolio! Sou Programador
             <S.TextDynamic>
               <TypeAnimation
-                sequence={['front-end', 1000, 'back-end', 2000, 'Freelancer', 1000]}
+                sequence={['front-end', 1000, 'back-end', 2000, 'freelancer', 1000]}
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
