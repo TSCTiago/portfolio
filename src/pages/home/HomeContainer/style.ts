@@ -89,15 +89,22 @@ export const Text = styled.div`
     font-size: 1.8rem;
   }
   @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 `;
 
 export const TextDynamic = styled.span`
   color: #00ae96;
+  font-size: 2.4rem;
 
   @media (min-width: 1400px) {
     margin-left: 10px;
+  }
+  @media (max-width: 1090px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
   }
 `;
 
