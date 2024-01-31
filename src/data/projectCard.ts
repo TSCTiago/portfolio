@@ -13,13 +13,13 @@ import node from '../assets/logos/node.png';
 // import nextJs from '../assets/logos/nextJs.png'
 // import php from '../assets/logos/php.png';
 
-import elections from '../assets/projects/elections.png';
-import soudbeat from '../assets/projects/sound-beat.png';
-import disney from '../assets/projects/disney-plus.png';
-import apod from '../assets/projects/apod.png';
-import smartWatch from '../assets/projects/smartwacth.png';
-import masterFinance from '../assets/projects/master-finance.png';
-import vestibruxando from '../assets/projects/vestibruxando.png';
+import elections from '../assets/projects/elections.avif';
+import soudbeat from '../assets/projects/sound-beat.avif';
+import disney from '../assets/projects/disney-plus.avif';
+import apod from '../assets/projects/apod.avif';
+import smartWatch from '../assets/projects/smartwacth.avif';
+import masterFinance from '../assets/projects/master-finance.avif';
+import vestibruxando from '../assets/projects/vestibruxando.avif';
 
 export const dataCard = [
   {
