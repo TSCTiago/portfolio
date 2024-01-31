@@ -587,13 +587,20 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-size: 1.8rem;
   }
   @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 `,Kg=B.span`
   color: #00ae96;
+  font-size: 2.4rem;
 
   @media (min-width: 1400px) {
     margin-left: 10px;
+  }
+  @media (max-width: 1090px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
   }
 `,$0=B.div`
   width: 100%;
