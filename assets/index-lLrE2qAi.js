@@ -114,6 +114,7 @@ Error generating stack: `+o.message+`
   }
 `,k3=B.img`
   margin-top: 30px;
+  height: auto;
 `,j3=B.h1`
   width: 350px;
   font-size: 1rem;
@@ -209,6 +210,7 @@ Error generating stack: `+o.message+`
   }
 `,U3=B.img`
   width: 30%;
+  height: auto;
   margin-top: -100px;
 
   @media (min-width: 2000px) {
@@ -441,6 +443,7 @@ Error generating stack: `+o.message+`
   }
 `,jg=B.img`
   width: 40%;
+  height: auto;
   @media (max-width: 768px) {
     margin-top: 30px;
     width: 100%;
@@ -556,6 +559,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 `,Yg=B.img`
   width: 170px;
+  height: auto;
   margin-top: 100px;
 
   @media (max-width: 1090px) {
@@ -795,6 +799,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   gap: 10px;
 `,E4=B.img`
   width: 45px;
+  height: auto;
   @media (max-width: 768px) {
     width: 40px;
   }
@@ -834,6 +839,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 `,j4=B.img`
   width: 550px;
+  height: auto;
   border-radius: 5px;
 
   @media (min-width: 2000px) {
@@ -908,6 +914,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 `,Z4=B.img`
   width: 50px;
+  height: auto;
   margin: 0;
 `,$4=B.button`
   display: block;
