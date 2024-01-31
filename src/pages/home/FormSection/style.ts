@@ -42,6 +42,7 @@ export const Title = styled.h1`
 
 export const Img = styled.img`
   width: 40%;
+  height: auto;
   @media (max-width: 768px) {
     margin-top: 30px;
     width: 100%;

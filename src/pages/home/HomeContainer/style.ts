@@ -52,6 +52,7 @@ export const Container = styled.section`
 
 export const Me = styled.img`
   width: 170px;
+  height: auto;
   margin-top: 100px;
 
   @media (max-width: 1090px) {

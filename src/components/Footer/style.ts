@@ -51,6 +51,7 @@ export const Container = styled.section`
 
 export const Img = styled.img`
   margin-top: 30px;
+  height: auto;
 `;
 
 export const Phrase = styled.h1`

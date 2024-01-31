@@ -68,6 +68,7 @@ export const DivLogos = styled.div`
 
 export const Logo = styled.img`
   width: 45px;
+  height: auto;
   @media (max-width: 768px) {
     width: 40px;
   }
@@ -117,6 +118,7 @@ export const DivImg = styled.div`
 
 export const Img = styled.img`
   width: 550px;
+  height: auto;
   border-radius: 5px;
 
   @media (min-width: 2000px) {

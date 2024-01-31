@@ -62,6 +62,7 @@ export const NavItem = styled.li`
 
 export const Logo = styled.img`
   width: 50px;
+  height: auto;
   margin: 0;
 `;
 

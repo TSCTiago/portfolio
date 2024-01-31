@@ -70,6 +70,7 @@ export const Bar = styled.div`
 
 export const Image = styled.img`
   width: 30%;
+  height: auto;
   margin-top: -100px;
 
   @media (min-width: 2000px) {
