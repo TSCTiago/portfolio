@@ -114,7 +114,7 @@ Error generating stack: `+o.message+`
   }
 `,k3=B.img`
   margin-top: 30px;
-`,j3=B.h4`
+`,j3=B.h1`
   width: 350px;
   font-size: 1rem;
   text-align: left;
@@ -184,7 +184,7 @@ Error generating stack: `+o.message+`
     align-items: center;
     margin: 0px 10px;
   }
-`,V3=B.h3`
+`,V3=B.h2`
   margin: 20px 40px;
   font-size: 1.3rem;
   font-weight: 500;
@@ -947,7 +947,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   @media (min-width: 768px) {
     display: none !important;
   }
-`,nv="/portfolio/assets/logo-6_eisFmt.png";function rv(){const[e,t]=Ae.useState(!1);return v.useEffect(()=>{const n=()=>{window.innerWidth>720&&t(!1)};window.addEventListener("resize",n)},[]),g.jsxs(K4,{open:e,children:[g.jsxs(q4,{children:[g.jsx(Z4,{src:nv,alt:"logo"}),g.jsx($4,{onClick:()=>t(!e),children:e?g.jsx(J4,{}):g.jsx(G4,{})})]}),g.jsxs(ev,{children:[g.jsx(Lt,{children:g.jsx(Mt,{href:"#home",children:"Home"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#about",children:"Sobre"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#experience",children:"Experiências"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#projects",children:"Projetos"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#contact",children:"Contato"})})]}),g.jsxs(tv,{open:e,children:[g.jsx(Lt,{children:g.jsx(Mt,{href:"#home",children:"Home"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#about",children:"Sobre"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#experience",children:"Experiências"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#projects",children:"Projetos"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#contact",children:"Contato"})})]})]})}const iv=B.div`
+`,nv="/portfolio/assets/logo-6_eisFmt.png";function rv(){const[e,t]=Ae.useState(!1);return v.useEffect(()=>{const n=()=>{window.innerWidth>720&&t(!1)};window.addEventListener("resize",n)},[]),g.jsxs(K4,{open:e,children:[g.jsxs(q4,{children:[g.jsx(Z4,{src:nv,alt:"logo"}),g.jsx($4,{"aria-label":"Toggle Navbar",onClick:()=>t(!e),children:e?g.jsx(J4,{}):g.jsx(G4,{})})]}),g.jsxs(ev,{children:[g.jsx(Lt,{children:g.jsx(Mt,{href:"#home",children:"Home"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#about",children:"Sobre"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#experience",children:"Experiências"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#projects",children:"Projetos"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#contact",children:"Contato"})})]}),g.jsxs(tv,{open:e,children:[g.jsx(Lt,{children:g.jsx(Mt,{href:"#home",children:"Home"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#about",children:"Sobre"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#experience",children:"Experiências"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#projects",children:"Projetos"})}),g.jsx(Lt,{children:g.jsx(Mt,{href:"#contact",children:"Contato"})})]})]})}const iv=B.div`
   z-index: 9999;
   display: flex;
   box-shadow: 1px 1px 1px black;
