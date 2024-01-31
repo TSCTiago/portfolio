@@ -480,7 +480,8 @@ Error generating stack: `+o.message+`
   transform: ${e=>e.filled==="false"?"translate(0, 12px) scale(0.8)":"translate(0, 23px) scale(1)"};
   transform-origin: top left;
   transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: black;
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
@@ -489,23 +490,24 @@ Error generating stack: `+o.message+`
   height: 64px;
   transform-origin: top left;
   border-radius: 4px;
-  border: none;
+  border: 2px solid #2199bf;
   padding: 24px 16px 4px 16px;
   font-size: 16px;
   line-height: 1;
   outline: none;
   box-shadow: none;
   transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-  background: #2199bf;
-  color: #FFFFFF;
+  // background: #10607A;
+  color: #000;
 
   &:focus {
-    box-shadow: 0 0 0 2px #79b1ff;
+    box-shadow: 0 0 0 2px #2199bf;
   }
 `,zg=B.input`
   ${X0}
   height: 64px;
 `,Rg=B.textarea`
+  max-width: 100%;
   ${X0}
   height: 128px;
   padding: 34px 16px 4px 16px;
