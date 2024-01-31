@@ -41,7 +41,7 @@ export const Div = styled.div`
   }
 `;
 
-export const AboutText = styled.h3`
+export const AboutText = styled.h2`
   margin: 20px 40px;
   font-size: 1.3rem;
   font-weight: 500;

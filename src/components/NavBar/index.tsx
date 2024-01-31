@@ -18,7 +18,7 @@ export default function NavBar() {
     <S.NavBar open={isMobileNavOpen}>
       <S.Header>
         <S.Logo src={Logo} alt="logo" />
-        <S.MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
+        <S.MobileNavToggle aria-label="Toggle Navbar" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
           {isMobileNavOpen ? <FaXmark /> : <FaAlignJustify />}
         </S.MobileNavToggle>
       </S.Header>
