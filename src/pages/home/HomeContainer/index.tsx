@@ -23,7 +23,6 @@ export default function HomeContainer() {
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
-                style={{ fontSize: '1rem' }}
               />
             </S.TextDynamic>
           </S.Text>
