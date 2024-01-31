@@ -1,8 +1,8 @@
 import * as S from './style';
-import img from '../../../assets/dev.png';
+import img from '../../../assets/dev.avif';
 // import me from '../../assets/eu.png';
-import me from '../../../assets/eu.png';
-import imageAnimated from '../../../assets/triangle.png';
+import me from '../../../assets/eu.avif';
+import imageAnimated from '../../../assets/triangle.avif';
 import cv from '../../../assets/cv/Currículo-Tiago.pdf';
 
 import { TypeAnimation } from 'react-type-animation';
@@ -36,7 +36,7 @@ export default function HomeContainer() {
           </S.AreaButtons>
         </S.Left>
         <S.Right>
-          <S.HomeImage width="750" height="auto" src={img} alt="image" />
+          <S.HomeImage width="90%" height="auto" src={img} alt="image" />
         </S.Right>
       </S.Container>
     </>

@@ -1,5 +1,5 @@
 import * as S from './style';
-import image from '../../../assets/programmer.png';
+import image from '../../../assets/programmer.avif';
 import Input from '../../../components/input';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';

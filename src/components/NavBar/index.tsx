@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { FaXmark, FaAlignJustify } from 'react-icons/fa6';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import * as S from './styles';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo.avif';
 
 export default function NavBar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);

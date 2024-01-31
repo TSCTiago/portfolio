@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from '../../../assets/back2.png';
+import background from '../../../assets/back2.avif';
 export const Container = styled.section`
   padding: 20px;
   background: linear-gradient(to bottom, #00ae96 55%, #fff 45%);

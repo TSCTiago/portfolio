@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
-import backLeft from '../../../assets/back1.png';
-import backRigth from '../../../assets/back.png';
+import backLeft from '../../../assets/back1.avif';
+import backRigth from '../../../assets/back.avif';
 
 const rotate = keyframes`
   from { transform: rotate(0deg); }
