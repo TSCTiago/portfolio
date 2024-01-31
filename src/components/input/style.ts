@@ -21,7 +21,7 @@ export const InputLabel = styled.label<labelProps>`
   transform: ${(props) => (props.filled === 'false' ? 'translate(0, 12px) scale(0.8)' : 'translate(0, 23px) scale(1)')};
   transform-origin: top left;
   transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
@@ -40,7 +40,7 @@ const baseInputStyles = `
   box-shadow: none;
   transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   background: #2199bf;
-  color: #fff;
+  color: #FFFFFF;
 
   &:focus {
     box-shadow: 0 0 0 2px #79b1ff;

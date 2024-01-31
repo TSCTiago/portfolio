@@ -26,7 +26,7 @@ export default function Footer() {
           </S.Link>
         </S.AreaButtons>
         <div>
-          <h4>Feito por @TSCTiago</h4>
+          <div>Feito por @TSCTiago</div>
         </div>
         <div>@TSCTiago all rights reserved</div>
       </S.Container>
