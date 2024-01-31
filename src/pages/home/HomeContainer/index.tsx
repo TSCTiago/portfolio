@@ -13,7 +13,7 @@ export default function HomeContainer() {
       <S.Container id="home">
         <S.ImageAnimated src={imageAnimated} alt="image" />
         <S.Left>
-          <S.Me src={me} alt="my-Avatar" />
+          <S.Me src={me} alt="my-Avatar" width="170" height="auto" />
 
           <S.Text>
             bem-vindo ao meu site portfolio! Sou Programador
@@ -36,7 +36,7 @@ export default function HomeContainer() {
           </S.AreaButtons>
         </S.Left>
         <S.Right>
-          <S.HomeImage src={img} alt="image" />
+          <S.HomeImage width="750" height="auto" src={img} alt="image" />
         </S.Right>
       </S.Container>
     </>

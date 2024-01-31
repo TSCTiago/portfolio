@@ -13,7 +13,7 @@ export default function ProjectCard({ title, description, img, techs, link, demo
   return (
     <S.Card>
       <S.DivImg>
-        <S.Img src={img} alt="portfolio" />
+        <S.Img src={img} alt="portfolio" width="550px" height="auto" />
       </S.DivImg>
 
       <S.DivInfos>
@@ -29,7 +29,7 @@ export default function ProjectCard({ title, description, img, techs, link, demo
 
         <S.DivLogos>
           {techs.map((tech, i) => (
-            <S.Logo key={i} src={tech} alt="tech" />
+            <S.Logo key={i} src={tech} alt="tech" width="40px" height="auto" />
           ))}
         </S.DivLogos>
         <S.DivLink>

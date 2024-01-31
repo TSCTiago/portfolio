@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <S.Container>
-        <S.Img src={logo} alt="logo" width={50} />
+        <S.Img src={logo} alt="logo" width="50px" height="auto" />
         <S.Phrase>Vivendo, aprendendo e subindo de nível um dia de cada vez.</S.Phrase>
 
         <S.AreaButtons>

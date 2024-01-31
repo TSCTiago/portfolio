@@ -125,7 +125,7 @@ export default function AboutSection() {
             experiência como estagiário e participei de projetos na faculdade. Atuo como desenvolvedor front-end e back-end. Estou
             naturalmente confiante e curioso, dedicando-me constantemente ao aprimoramento das minhas habilidades.
           </S.AboutText>
-          <S.Image src={aboutImage} alt="me" />
+          <S.Image src={aboutImage} alt="me" width="30%" height="auto" />
         </S.Div>
         <S.SubTitle>Minhas Skills</S.SubTitle>
 

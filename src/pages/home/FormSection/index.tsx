@@ -52,7 +52,7 @@ export default function FormSection() {
           <S.Submitbutton type="submit">Enviar</S.Submitbutton>
         </S.Form>
 
-        <S.Img src={image} alt="img" />
+        <S.Img src={image} alt="img" width="40%" height="auto" />
       </S.Container>
     </>
   );

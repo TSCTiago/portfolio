@@ -51,8 +51,6 @@ export const Container = styled.section`
 `;
 
 export const Me = styled.img`
-  width: 170px;
-  height: auto;
   margin-top: 100px;
 
   @media (max-width: 1090px) {
@@ -68,11 +66,9 @@ export const Me = styled.img`
 `;
 
 export const HomeImage = styled.img`
-  width: 100%;
   animation: ${translate} 5s linear infinite;
-
-  @media (min-width: 2000px) {
-    width: 90%;
+  @media (max-width: 1200px) {
+    width: 70%;
   }
 `;
 
