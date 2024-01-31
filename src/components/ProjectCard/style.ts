@@ -49,7 +49,7 @@ export const SubTitle = styled.h3`
   text-align: justify;
   font-weight: 500;
   @media (max-width: 768px) {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 `;
 
