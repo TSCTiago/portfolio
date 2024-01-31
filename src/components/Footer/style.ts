@@ -53,7 +53,7 @@ export const Img = styled.img`
   margin-top: 30px;
 `;
 
-export const Phrase = styled.h3`
+export const Phrase = styled.h4`
   width: 350px;
   font-size: 1rem;
   text-align: left;

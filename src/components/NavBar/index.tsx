@@ -17,7 +17,7 @@ export default function NavBar() {
   return (
     <S.NavBar open={isMobileNavOpen}>
       <S.Header>
-        <S.Logo src={Logo} />
+        <S.Logo src={Logo} alt="logo" />
         <S.MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
           {isMobileNavOpen ? <FaXmark /> : <FaAlignJustify />}
         </S.MobileNavToggle>

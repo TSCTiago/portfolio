@@ -46,9 +46,9 @@ export default function FormSection() {
       <S.Container id="contact">
         <S.Form onSubmit={sendEmail}>
           <S.Title>Entre em contato</S.Title>
-          <Input type="text" placeholder="Nome" value={nome} Isinput={true} onInputChange={setNome} />
-          <Input type="text" placeholder="Email" value={email} Isinput={true} onInputChange={setEmail} />
-          <Input type="text" placeholder="Mensagem" value={mensagem} Isinput={false} onInputChange={setMensagem} />
+          <Input type="text" id="nome" placeholder="Nome" value={nome} Isinput={true} onInputChange={setNome} />
+          <Input type="text" id="email" placeholder="Email" value={email} Isinput={true} onInputChange={setEmail} />
+          <Input type="text" id="mensagem" placeholder="Mensagem" value={mensagem} Isinput={false} onInputChange={setMensagem} />
           <S.Submitbutton type="submit">Enviar</S.Submitbutton>
         </S.Form>
 

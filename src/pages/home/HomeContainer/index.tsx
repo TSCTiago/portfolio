@@ -6,7 +6,6 @@ import imageAnimated from '../../../assets/triangle.png';
 import cv from '../../../assets/cv/Currículo-Tiago.pdf';
 
 import { TypeAnimation } from 'react-type-animation';
-import 'animate.css';
 
 export default function HomeContainer() {
   return (

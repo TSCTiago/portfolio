@@ -6,9 +6,10 @@ interface InputProps {
   placeholder: string;
   Isinput: boolean;
   value: string;
+  id: string;
   onInputChange: (value: string) => void;
 }
-export default function Input({ type = 'text', placeholder, value, Isinput, onInputChange }: InputProps) {
+export default function Input({ type = 'text', placeholder, value, Isinput, onInputChange, id }: InputProps) {
   const [filled, setFilled] = useState(true);
 
   useEffect(() => {
@@ -20,6 +21,7 @@ export default function Input({ type = 'text', placeholder, value, Isinput, onIn
     <S.InputContainer>
       {!Isinput ? (
         <S.TextArea
+          id={id}
           value={value}
           onChange={(e) => onInputChange(e.target.value)}
           onFocus={() => setFilled(false)}
@@ -27,7 +29,7 @@ export default function Input({ type = 'text', placeholder, value, Isinput, onIn
         />
       ) : (
         <S.InputElement
-          // inputis={inputis}
+          id={id}
           type={type}
           value={value}
           onChange={(e) => onInputChange(e.target.value)}
@@ -35,7 +37,9 @@ export default function Input({ type = 'text', placeholder, value, Isinput, onIn
           onBlur={() => (value == '' ? setFilled(true) : setFilled(false))}
         />
       )}
-      <S.InputLabel filled={filled.toString()}>{placeholder}</S.InputLabel>
+      <S.InputLabel htmlFor={id} filled={filled.toString()}>
+        {placeholder}
+      </S.InputLabel>
     </S.InputContainer>
   );
 }
