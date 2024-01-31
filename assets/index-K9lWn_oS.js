@@ -779,7 +779,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   text-align: justify;
   font-weight: 500;
   @media (max-width: 768px) {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 `,x4=B.h3`
   font-size: 1.3rem;
