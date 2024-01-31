@@ -971,6 +971,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     transform: scale(1.1);
   }
 `;function ov(){const[e,t]=v.useState(0),n=()=>{const i=window.scrollY;t(i)},r=()=>{window.scrollTo({top:0,behavior:"smooth"})};return v.useEffect(()=>{window.addEventListener("scroll",n,{passive:!0})},[]),g.jsx(g.Fragment,{children:e>10?g.jsx(iv,{onClick:r,children:g.jsx(Y4,{})}):""})}function lv(){return g.jsxs(g.Fragment,{children:[g.jsx(Co.ReactNotifications,{}),g.jsx(ov,{}),g.jsx(rv,{}),g.jsx(A2,{children:g.jsx(Yd,{path:"/",element:g.jsx(H4,{})})})]})}const av=S3`
+
   * {
     margin: 0;
     padding: 0;
